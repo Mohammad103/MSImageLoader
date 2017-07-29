@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6479F6290885FF65EA144C92 /* libPods-MSImageLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C75BFE0E78F75FFDA868C0 /* libPods-MSImageLoader.a */; };
 		84EDB6961F2CC3EE0081F34C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDB6951F2CC3EE0081F34C /* main.m */; };
 		84EDB6991F2CC3EE0081F34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDB6981F2CC3EE0081F34C /* AppDelegate.m */; };
 		84EDB69C1F2CC3EE0081F34C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDB69B1F2CC3EE0081F34C /* ViewController.m */; };
@@ -40,6 +41,9 @@
 		84EDB6AA1F2CC3EE0081F34C /* MSImageLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSImageLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EDB6AE1F2CC3EE0081F34C /* MSImageLoaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSImageLoaderUITests.m; sourceTree = "<group>"; };
 		84EDB6B01F2CC3EE0081F34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8E8F46748F873FC1A9C9A9 /* Pods-MSImageLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSImageLoader.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSImageLoader/Pods-MSImageLoader.release.xcconfig"; sourceTree = "<group>"; };
+		C0C75BFE0E78F75FFDA868C0 /* libPods-MSImageLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSImageLoader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9136AA3D887825A23878B09 /* Pods-MSImageLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSImageLoader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSImageLoader/Pods-MSImageLoader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6479F6290885FF65EA144C92 /* libPods-MSImageLoader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				84EDB6931F2CC3EE0081F34C /* MSImageLoader */,
 				84EDB6AD1F2CC3EE0081F34C /* MSImageLoaderUITests */,
 				84EDB6921F2CC3EE0081F34C /* Products */,
+				8A607A7C884BB74F6181D80A /* Pods */,
+				BEA4AE019E21E17837ED4356 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,23 @@
 			path = MSImageLoaderUITests;
 			sourceTree = "<group>";
 		};
+		8A607A7C884BB74F6181D80A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9136AA3D887825A23878B09 /* Pods-MSImageLoader.debug.xcconfig */,
+				8C8E8F46748F873FC1A9C9A9 /* Pods-MSImageLoader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEA4AE019E21E17837ED4356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C75BFE0E78F75FFDA868C0 /* libPods-MSImageLoader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84EDB6B31F2CC3EE0081F34C /* Build configuration list for PBXNativeTarget "MSImageLoader" */;
 			buildPhases = (
+				7C4D61F612847B0494704E77 /* [CP] Check Pods Manifest.lock */,
 				84EDB68D1F2CC3EE0081F34C /* Sources */,
 				84EDB68E1F2CC3EE0081F34C /* Frameworks */,
 				84EDB68F1F2CC3EE0081F34C /* Resources */,
+				4E957E037334BD89A390F392 /* [CP] Embed Pods Frameworks */,
+				D61F718A5CCC4D502152BFC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E957E037334BD89A390F392 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSImageLoader/Pods-MSImageLoader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C4D61F612847B0494704E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D61F718A5CCC4D502152BFC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSImageLoader/Pods-MSImageLoader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84EDB68D1F2CC3EE0081F34C /* Sources */ = {
@@ -349,6 +424,7 @@
 		};
 		84EDB6B41F2CC3EE0081F34C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9136AA3D887825A23878B09 /* Pods-MSImageLoader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSImageLoader/Info.plist;
@@ -360,6 +436,7 @@
 		};
 		84EDB6B51F2CC3EE0081F34C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C8E8F46748F873FC1A9C9A9 /* Pods-MSImageLoader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSImageLoader/Info.plist;
